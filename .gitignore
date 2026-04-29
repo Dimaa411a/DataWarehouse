@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual env
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+logs/
+
+# Data (якщо є локальні файли)
+data/
+*.csv
+*.parquet
+
+# Airflow
+airflow/logs/
+airflow/*.pid
+
+# OS
+.DS_Store
