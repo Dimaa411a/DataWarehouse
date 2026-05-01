@@ -1,7 +1,5 @@
 import pandas as pd
 from datetime import datetime
-from etl.extract.extract_crypto import connect_crypto_api
-
 
 def transform_crypto(data):
     df = pd.DataFrame(data).T
@@ -11,8 +9,4 @@ def transform_crypto(data):
     df['currency'] = 'USD'
     df['date'] = datetime.now()
 
-    return df   
-
-
-df = transform_crypto(connect_crypto_api())
-print(df)
+    return df

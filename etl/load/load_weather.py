@@ -1,6 +1,6 @@
-def load_crypto(df, engine):
+def load_weather(df, engine):
     df.to_sql(
-        name="crypto_prices",
+        name="weather",
         con=engine,
         if_exists="append",
         index=False
