@@ -1,30 +1,70 @@
+# =====================
 # Python
+# =====================
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
+*.pyd
 
+# =====================
 # Virtual env
+# =====================
 .venv/
 venv/
+env/
 
-# Environment variables
-.env
-
-# IDE
-.idea/
-.vscode/
-
-# Logs
+# =====================
+# Airflow
+# =====================
+airflow.db
+airflow-webserver.pid
+airflow.cfg
+airflow_home/
 logs/
 
-# Data (якщо є локальні файли)
-data/
-*.csv
+# якщо локальні DAG runtime файли
 *.parquet
+*.csv
+*.json
 
-# Airflow
-airflow/logs/
-airflow/*.pid
+# =====================
+# IDE (PyCharm)
+# =====================
+.idea/
 
+# =====================
+# Jupyter
+# =====================
+.ipynb_checkpoints/
+
+# =====================
 # OS
+# =====================
 .DS_Store
+Thumbs.db
+
+# =====================
+# Secrets / env
+# =====================
+.env
+*.env
+
+# =====================
+# Data (важливо для DE)
+# =====================
+data/
+output/
+tmp/
+
+# =====================
+# SQL / DB dumps
+# =====================
+*.sql
+*.dump
+*.db
+
+# =====================
+# logs
+# =====================
+*.log
+logs/
